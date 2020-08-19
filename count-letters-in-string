@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // This string can be changed to any string of words
+    string str = "Change this to whatever you like";
+    // Change the checkCharacter value to your desired letter
+    char checkCharacter = 'h'; 
+    int count = 0;
+
+    for (int i = 0; i < str.size(); i++)
+    {
+        if (str[i] ==  checkCharacter)
+        {
+            ++ count;
+        }
+    }
+
+    cout << "Number of " << checkCharacter << " = " << count;
+
+    return 0;
+}
